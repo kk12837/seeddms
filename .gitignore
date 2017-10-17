@@ -1,3 +1,4 @@
 data/cache/*
 data/1048576/*
 .idea/
+*.log
