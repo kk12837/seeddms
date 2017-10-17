@@ -1,2 +1,3 @@
-/data/cache/*
-/data/1048576/*
+data/cache/*
+data/1048576/*
+.idea/
