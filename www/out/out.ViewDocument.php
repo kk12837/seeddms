@@ -78,6 +78,7 @@ if($view) {
 	$view->setParam('convertToPdf', $settings->_convertToPdf);
 	$view->setParam('currenttab', isset($_GET['currenttab']) ? $_GET['currenttab'] : "");
 	$view->setParam('timeout', $settings->_cmdTimeout);
+	$view->setParam('contentOffsetDir', $settings->_contentOffsetDir);
 	$view($_GET);
 	exit;
 }

@@ -51,7 +51,7 @@
        - dropFolderDir: where files for document upload are located
        - cacheDir: where the preview images are saved
     -->
-    <server rootDir="C:\xampp\htdocs\keith\seeddms51x\www\" httpRoot="/keith/seeddms51x/www/" contentDir="C:\xampp\htdocs\keith\seeddms51x/data/\" stagingDir="C:\xampp\htdocs\keith\seeddms51x/data/staging/" luceneDir="C:\xampp\htdocs\keith\seeddms51x/data/lucene/" logFileEnable="true" logFileRotation="d" enableLargeFileUpload="false" partitionSize="2000000" cacheDir="C:\xampp\htdocs\keith\seeddms51x/data/cache/" dropFolderDir="" backupDir="" checkOutDir="" createCheckOutDir="false" maxUploadSize="">
+    <server rootDir="C:\xampp\htdocs\keith\seeddms51x\www\" httpRoot="/keith/seeddms51x/www/" contentDir="C:\xampp\htdocs\keith\seeddms51x\data\" stagingDir="C:\xampp\htdocs\keith\seeddms51x\data\staging\" luceneDir="C:\xampp\htdocs\keith\seeddms51x\data\lucene\" logFileEnable="true" logFileRotation="d" enableLargeFileUpload="false" partitionSize="2000000" cacheDir="C:\xampp\htdocs\keith\seeddms51x\data\cache\" dropFolderDir="" backupDir="" checkOutDir="" createCheckOutDir="false" maxUploadSize="">
     </server>
 
     <!-- enableGuestLogin: If you want anybody to login as guest, set the following line to true

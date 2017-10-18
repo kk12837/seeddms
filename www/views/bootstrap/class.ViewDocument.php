@@ -406,6 +406,8 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 		$documentid = $document->getId();
 		$currenttab = $this->params['currenttab'];
 		$timeout = $this->params['timeout'];
+		$contentOffsetDir = $this->params['contentOffsetDir'];
+
 
 		$versions = $document->getContent();
 
@@ -639,6 +641,13 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 		if($accessop->mayEditAttributes()) {
 			print "<li><a href=\"out.EditAttributes.php?documentid=".$documentid."&version=".$latestContent->getVersion()."\"><i class=\"icon-edit\"></i>".getMLText("edit_attributes")."</a></li>";
 		}
+
+		//external download link
+		if ($file_exists) {
+
+			print "<li><a href=\"../../data/".$contentOffsetDir.$latestContent->getPath()."\"><i class=\"icon-download\"></i>External Download Link</a>";
+		}
+
 
 		$items = $this->callHook('extraVersionActions', $latestContent);
 		if($items) {
