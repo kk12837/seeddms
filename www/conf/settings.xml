@@ -51,7 +51,7 @@
        - dropFolderDir: where files for document upload are located
        - cacheDir: where the preview images are saved
     -->
-    <server rootDir="/data/webdocs/dms/" httpRoot="/dms/www/" contentDir="/data/webdocs/dms/data/" stagingDir="/data/webdocs/dms/data/staging/" luceneDir="/data/webdocs/dms/data/lucene/" logFileEnable="true" logFileRotation="d" enableLargeFileUpload="false" partitionSize="2000000" cacheDir="/data/webdocs/dms/data/cache/" dropFolderDir="" backupDir="" checkOutDir="" createCheckOutDir="false" maxUploadSize="">
+    <server rootDir="/data/webdocs/dms/www/" httpRoot="/dms/www/" contentDir="/data/webdocs/dms/data/" stagingDir="/data/webdocs/dms/data/staging/" luceneDir="/data/webdocs/dms/data/lucene/" logFileEnable="true" logFileRotation="d" enableLargeFileUpload="false" partitionSize="2000000" cacheDir="/data/webdocs/dms/data/cache/" dropFolderDir="" backupDir="" checkOutDir="" createCheckOutDir="false" maxUploadSize="">
     </server>
 
     <!-- enableGuestLogin: If you want anybody to login as guest, set the following line to true
