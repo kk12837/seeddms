@@ -51,7 +51,7 @@
        - dropFolderDir: where files for document upload are located
        - cacheDir: where the preview images are saved
     -->
-    <server rootDir="C:\xampp\htdocs\keith\seeddms51x\www\" httpRoot="/keith/seeddms51x/www/" contentDir="C:\xampp\htdocs\keith\seeddms51x/data/\" stagingDir="C:\xampp\htdocs\keith\seeddms51x/data/staging/" luceneDir="C:\xampp\htdocs\keith\seeddms51x/data/lucene/" logFileEnable="true" logFileRotation="d" enableLargeFileUpload="false" partitionSize="2000000" cacheDir="C:\xampp\htdocs\keith\seeddms51x/data/cache/" dropFolderDir="" backupDir="" checkOutDir="" createCheckOutDir="false" maxUploadSize="">
+    <server rootDir="/data/webdocs/dms/" httpRoot="/dms/www/" contentDir="/data/webdocs/dms/data/" stagingDir="/data/webdocs/dms/data/staging/" luceneDir="/data/webdocs/dms/data/lucene/" logFileEnable="true" logFileRotation="d" enableLargeFileUpload="false" partitionSize="2000000" cacheDir="/data/webdocs/dms/data/cache/" dropFolderDir="" backupDir="" checkOutDir="" createCheckOutDir="false" maxUploadSize="">
     </server>
 
     <!-- enableGuestLogin: If you want anybody to login as guest, set the following line to true
@@ -97,7 +97,7 @@
        - dbUser: username for database-access
        - dbPass: password for database-access
     -->
-    <database dbDriver="mysql" dbHostname="127.0.0.1" dbDatabase="seeddms" dbUser="root" dbPass="1234" doNotCheckVersion="false">
+    <database dbDriver="mysql" dbHostname="127.0.0.1" dbDatabase="seeddms" dbUser="dbuser" dbPass="C1gL60Qb" doNotCheckVersion="false">
     </database>
     <!-- smtpServer: SMTP Server hostname
        - smtpPort: SMTP Server port
@@ -144,7 +144,7 @@
        - updateNotifyTime: users are notified about document-changes that took place within the last "updateNotifyTime" seconds
        - extraPath: Path to addtional software. This is the directory containing additional software like the adodb directory, or the pear Log package. This path will be added to the php include path
     -->
-    <server coreDir="" luceneClassDir="" contentOffsetDir="1048576" maxDirID="0" updateNotifyTime="86400" extraPath="C:\xampp\htdocs\keith\seeddms51x\pear\" maxExecutionTime="30" cmdTimeout="1">
+    <server coreDir="" luceneClassDir="" contentOffsetDir="1048576" maxDirID="0" updateNotifyTime="86400" extraPath="/data/webdocs/dms/pear/" maxExecutionTime="30" cmdTimeout="1">
     </server>
     <converters target="fulltext">
       <converter mimeType="application/pdf">pdftotext -nopgbrk %s - | sed -e 's/ [a-zA-Z0-9.]\{1\} / /g' -e 's/[0-9.]//g'</converter>
